@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Abdualrahman Alfadaly</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation (Consistent with Index) -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">ABDUALRAHMAN<span class="text-accent">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header text-center text-white d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">My Projects</h1>
+            <p class="lead">A showcase of my technical work and creative solutions</p>
+        </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="section-padding">
+        <div class="container">
+
+            <!-- Filter Buttons -->
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <div class="btn-group flex-wrap" role="group" aria-label="Project Filters">
+                        <button type="button" class="btn btn-outline-primary active filter-btn"
+                            data-filter="all">All</button>
+                        <button type="button" class="btn btn-outline-primary filter-btn" data-filter="web">Web
+                            Apps</button>
+                        <button type="button" class="btn btn-outline-primary filter-btn" data-filter="mobile">Mobile
+                            Apps</button>
+                        <button type="button" class="btn btn-outline-primary filter-btn"
+                            data-filter="design">Design</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="row g-4" id="projectsGrid">
+
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="web">
+                    <div class="card h-100 shadow border-0 hover-lift">
+                        <div class="card-img-top-wrapper overflow-hidden">
+                            <img src="images/network-scanner-1.jpg (main card image).png" class="card-img-top"
+                                alt="Network Scanner">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Network Scanner Tool</h5>
+                            <p class="card-text text-muted">Advanced network reconnaissance tool for vulnerability assessment.</p>
+                            <div class="mb-3">
+                                <span class="badge">Python</span>
+                                <span class="badge">Scapy</span>
+                                <span class="badge">Nmap</span>
+                            </div>
+                            <button class="btn btn-primary w-100 custom-btn view-details-btn mt-auto" data-bs-toggle="modal"
+                                data-bs-target="#projectModal" data-title="Network Scanner Tool"
+                                data-desc="A comprehensive network scanning tool built with Python and Scapy. Features include port scanning, OS detection, service enumeration, and vulnerability identification. Implements multi-threading for faster scans and generates detailed reports in multiple formats."
+                                data-img="images/network-scanner-1.jpg (main card image).png"
+                                data-img2="images/network-scanner-2.jpg (carousel image 2).png"
+                                data-img3="images/network-scanner-3.jpg (carousel image 3).png"
+                                data-tech="Python,Scapy,Nmap"
+                                data-video="media/network-scanner-demo.mp4">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="web">
+                    <div class="card h-100 shadow border-0 hover-lift">
+                        <div class="card-img-top-wrapper overflow-hidden">
+                            <img src="images/password-cracker-1.jpg (main card image).png" class="card-img-top"
+                                alt="Password Cracker">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Password Cracking Suite</h5>
+                            <p class="card-text text-muted">Educational tool demonstrating password security vulnerabilities.</p>
+                            <div class="mb-3">
+                                <span class="badge">Python</span>
+                                <span class="badge">Hashlib</span>
+                            </div>
+                            <button class="btn btn-primary w-100 custom-btn view-details-btn mt-auto" data-bs-toggle="modal"
+                                data-bs-target="#projectModal" data-title="Password Cracking Suite"
+                                data-desc="An educational password cracking tool that demonstrates various attack methods including dictionary attacks, brute force, and rainbow tables. Supports multiple hash algorithms (MD5, SHA-256, bcrypt). Built to raise awareness about password security best practices."
+                                data-img="images/password-cracker-1.jpg (main card image).png"
+                                data-img2="images/password-cracker-2.jpg (carousel image 2).png"
+                                data-img3="images/password-cracker-3.jpg (carousel image 3).png"
+                                data-tech="Python,Hashlib"
+                                data-video="media/password-cracker-demo.mp4">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="mobile">
+                    <div class="card h-100 shadow border-0 hover-lift">
+                        <div class="card-img-top-wrapper overflow-hidden">
+                            <img src="images/packet-sniffer-1.jpg (main card image).png" class="card-img-top"
+                                alt="Packet Sniffer">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Packet Sniffer & Analyzer</h5>
+                            <p class="card-text text-muted">Real-time network traffic monitoring and analysis tool.</p>
+                            <div class="mb-3">
+                                <span class="badge">Python</span>
+                                <span class="badge">Wireshark</span>
+                            </div>
+                            <button class="btn btn-primary w-100 custom-btn view-details-btn mt-auto" data-bs-toggle="modal"
+                                data-bs-target="#projectModal" data-title="Packet Sniffer & Analyzer"
+                                data-desc="A network packet analyzer that captures and inspects network traffic in real-time. Features protocol analysis, packet filtering, and traffic visualization. Useful for network troubleshooting, security auditing, and understanding network protocols."
+                                data-img="images/packet-sniffer-1.jpg (main card image).png"
+                                data-img2="images/packet-sniffer-2.jpg (carousel image 2).png"
+                                data-img3="images/packet-sniffer-3.jpg (carousel image 3).png"
+                                data-tech="Python,Wireshark"
+                                data-video="media/packet-sniffer-demo.mp4">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-4 project-item" data-category="design">
+                    <div class="card h-100 shadow border-0 hover-lift">
+                        <div class="card-img-top-wrapper overflow-hidden">
+                            <img src="images/exploit-framework-1.jpg (main card image).png" class="card-img-top"
+                                alt="Exploit Framework">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fw-bold">Exploit Development Framework</h5>
+                            <p class="card-text text-muted">Modular framework for security testing and exploit development.</p>
+                            <div class="mb-3">
+                                <span class="badge">Python</span>
+                                <span class="badge">Metasploit</span>
+                            </div>
+                            <button class="btn btn-primary w-100 custom-btn view-details-btn mt-auto" data-bs-toggle="modal"
+                                data-bs-target="#projectModal" data-title="Exploit Development Framework"
+                                data-desc="A modular penetration testing framework inspired by Metasploit. Includes various exploit modules, payload generators, and post-exploitation tools. Designed for ethical hacking and security research purposes with proper authorization."
+                                data-img="images/exploit-framework-1.jpg (main card image).png"
+                                data-img2="images/exploit-framework-2.jpg (carousel image 2).png"
+                                data-img3="images/exploit-framework-3.jpg (carousel image 3).png"
+                                data-tech="Python,Metasploit"
+                                data-video="media/exploit-framework-demo.mp4">
+                                View Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold fs-3" id="videoModalTitle">Live Demo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <video id="demoVideo" class="w-100" controls autoplay>
+                        <source src="" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title fw-bold fs-3" id="modalTitle">Project Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Slideshow / Gallery -->
+                    <div id="projectCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0"
+                                class="active"></button>
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"></button>
+                        </div>
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                                <img id="modalImg1" src="" class="d-block w-100" alt="Project Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="modalImg2" src="" class="d-block w-100" alt="Project Screenshot 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="modalImg3" src="" class="d-block w-100" alt="Project Screenshot 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                    <h5 class="fw-bold">Description</h5>
+                    <p id="modalDesc" class="text-muted">Project description goes here.</p>
+
+                    <h5 class="fw-bold mt-4">Technologies</h5>
+                    <div id="modalTech" class="d-flex gap-2 flex-wrap">
+                        <span class="badge">HTML5</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">JavaScript</span>
+                    </div>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary custom-btn" id="liveDemoBtn">Live Demo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (Consistent with Index) -->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <div class="mb-3 social-icons">
+                <a href="#" class="text-white me-3"><i class="bi bi-github fs-4"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-4"></i></a>
+                <a href="#" class="text-white me-3"><i class="bi bi-twitter-x fs-4"></i></a>
+                <a href="#" class="text-white"><i class="bi bi-envelope fs-4"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2024 Abdualrahman Alfadaly. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="btn btn-primary rounded-circle shadow" title="Back to Top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

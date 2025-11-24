@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdualrahman Alfadaly - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #c9d1d9;
+            background: #0d1117;
+            padding: 40px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            border-bottom: 3px solid #00ff41;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 36px;
+            color: #00ff41;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+        }
+        
+        .header .title {
+            font-size: 18px;
+            color: #00ff41;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            font-size: 14px;
+            color: #8b949e;
+        }
+        
+        .contact-info a {
+            color: #00ff41;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            color: #39ff14;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            color: #00ff41;
+            border-bottom: 2px solid #00ff41;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            text-shadow: 0 0 8px rgba(0, 255, 65, 0.3);
+        }
+        
+        .job, .education-item, .project-item {
+            margin-bottom: 20px;
+            background-color: #151a1e;
+            padding: 15px;
+            border-left: 3px solid #00ff41;
+            border-radius: 5px;
+        }
+        
+        .job-title, .degree {
+            font-size: 16px;
+            font-weight: bold;
+            color: #c9d1d9;
+        }
+        
+        .company, .school {
+            font-size: 14px;
+            color: #00ff41;
+            font-weight: bold;
+        }
+        
+        .date {
+            font-size: 13px;
+            color: #8b949e;
+            font-style: italic;
+        }
+        
+        .description {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #8b949e;
+        }
+        
+        .description ul {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        
+        .description li {
+            margin-bottom: 5px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .skill-category {
+            margin-bottom: 15px;
+        }
+        
+        .skill-category h4 {
+            color: #00ff41;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .skill-category p {
+            font-size: 13px;
+            color: #8b949e;
+        }
+        
+        .certifications {
+            background-color: #151a1e;
+            padding: 15px 15px 15px 35px;
+            border-left: 3px solid #00ff41;
+            border-radius: 5px;
+        }
+        
+        .certifications li {
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #8b949e;
+        }
+        
+        .certifications strong {
+            color: #c9d1d9;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                color: black;
+            }
+            .header h1, .section-title {
+                color: #00ff41;
+            }
+            .job, .education-item, .project-item, .certifications {
+                background-color: #f5f5f5;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ABDUALRAHMAN ALFADALY</h1>
+        <div class="title">Cybersecurity Specialist & Penetration Tester</div>
+        <div class="contact-info">
+            New York, USA | <a href="mailto:abdualrahman@example.com">abdualrahman@example.com</a> | 
+            <a href="https://github.com/abdualrahman">GitHub</a> | 
+            <a href="https://linkedin.com/in/abdualrahman">LinkedIn</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="description">
+            Passionate cybersecurity professional with expertise in penetration testing, network security, and ethical hacking. 
+            Experienced in developing custom security tools and conducting comprehensive vulnerability assessments. 
+            Strong background in Python programming and security frameworks. Committed to staying current with emerging 
+            threats and security best practices.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Programming Languages</h4>
+                <p>Python, JavaScript, Bash, PowerShell, C++</p>
+            </div>
+            <div class="skill-category">
+                <h4>Security Tools</h4>
+                <p>Metasploit, Nmap, Wireshark, Burp Suite, Scapy</p>
+            </div>
+            <div class="skill-category">
+                <h4>Frameworks & Libraries</h4>
+                <p>OWASP, Kali Linux, Hashcat, John the Ripper</p>
+            </div>
+            <div class="skill-category">
+                <h4>Web Technologies</h4>
+                <p>HTML5, CSS3, React, Node.js, SQL</p>
+            </div>
+            <div class="skill-category">
+                <h4>Security Domains</h4>
+                <p>Network Security, Web App Security, Cryptography</p>
+            </div>
+            <div class="skill-category">
+                <h4>Operating Systems</h4>
+                <p>Linux, Windows, macOS, Kali Linux, Parrot OS</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <div class="degree">Bachelor of Science in Computer Science</div>
+            <div class="school">University of Technology</div>
+            <div class="date">Expected Graduation: May 2025</div>
+            <div class="description">
+                <ul>
+                    <li>Focus: Cybersecurity and Network Security</li>
+                    <li>GPA: 3.8/4.0</li>
+                    <li>Relevant Coursework: Network Security, Cryptography, Ethical Hacking, Digital Forensics</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Projects</h2>
+        
+        <div class="project-item">
+            <div class="job-title">Network Scanner Tool</div>
+            <div class="date">Python, Scapy, Nmap</div>
+            <div class="description">
+                <ul>
+                    <li>Developed comprehensive network scanning tool for vulnerability assessment</li>
+                    <li>Implemented multi-threading for faster port scanning and service enumeration</li>
+                    <li>Generated detailed reports in multiple formats (PDF, JSON, HTML)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="job-title">Password Cracking Suite</div>
+            <div class="date">Python, Hashlib</div>
+            <div class="description">
+                <ul>
+                    <li>Built educational tool demonstrating password security vulnerabilities</li>
+                    <li>Implemented dictionary attacks, brute force, and rainbow table methods</li>
+                    <li>Supports multiple hash algorithms (MD5, SHA-256, bcrypt)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="job-title">Packet Sniffer & Analyzer</div>
+            <div class="date">Python, Wireshark</div>
+            <div class="description">
+                <ul>
+                    <li>Created real-time network traffic monitoring and analysis tool</li>
+                    <li>Implemented protocol analysis and packet filtering capabilities</li>
+                    <li>Developed traffic visualization for security auditing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <div class="job-title">Exploit Development Framework</div>
+            <div class="date">Python, Metasploit</div>
+            <div class="description">
+                <ul>
+                    <li>Designed modular penetration testing framework</li>
+                    <li>Integrated exploit modules and payload generators</li>
+                    <li>Built for ethical hacking and security research purposes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Certifications</h2>
+        <ul class="certifications">
+            <li><strong>CompTIA Security+</strong> - In Progress</li>
+            <li><strong>Certified Ethical Hacker (CEH)</strong> - Planned 2024</li>
+            <li><strong>Python Programming Certificate</strong> - Coursera, 2023</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Additional Experience</h2>
+        <div class="job">
+            <div class="job-title">Cybersecurity Intern</div>
+            <div class="company">Tech Security Solutions</div>
+            <div class="date">Summer 2023</div>
+            <div class="description">
+                <ul>
+                    <li>Assisted in conducting vulnerability assessments for client networks</li>
+                    <li>Participated in penetration testing exercises and security audits</li>
+                    <li>Documented findings and contributed to security reports</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
